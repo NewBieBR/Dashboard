@@ -1,0 +1,96 @@
+{
+  "users": [
+    {
+      "username": "Hung",
+      "password": "daonguyen0",
+      "id": 0,
+      "services": [
+        "time",
+        "entertainment",
+        "games",
+        "weather",
+        "finance",
+        "news"
+      ],
+      "widgets": [
+        {
+          "size": "1",
+          "widgetId": "city_time",
+          "city": "Paris",
+          "id": "0"
+        },
+        {
+          "size": "3",
+          "widgetId": "artist_events",
+          "artist_name": "Damso",
+          "id": "2"
+        },
+        {
+          "size": "3",
+          "widgetId": "newspaper",
+          "newspaper": "bbc-news",
+          "id": "3"
+        },
+        {
+          "size": "4",
+          "widgetId": "country_headlines",
+          "country": "fr",
+          "id": "4"
+        },
+        {
+          "size": "4",
+          "widgetId": "steam_game_rank",
+          "category": "Action",
+          "id": "6"
+        },
+        {
+          "size": "2",
+          "widgetId": "bored",
+          "id": "6"
+        },
+        {
+          "size": "3",
+          "widgetId": "artist_events",
+          "artist_name": "Damso",
+          "id": "7"
+        }
+      ]
+    },
+    {
+      "username": "diego",
+      "password": "daonguyen0",
+      "id": 1,
+      "services": [
+        "news",
+        "time",
+        "entertainment",
+        "games",
+        "finance",
+        "weather"
+      ],
+      "widgets": [
+        {
+          "size": "2",
+          "widgetId": "artist_events",
+          "frequency": "5",
+          "artist_name": "jain",
+          "id": "0"
+        },
+        {
+          "size": "4",
+          "widgetId": "steam_game_rank",
+          "category": "Massively Multiplayer",
+          "id": "1",
+          "frequency": "5"
+        }
+      ]
+    },
+    {
+      "username": "hung",
+      "password": "hungdao1",
+      "id": 2,
+      "services": [],
+      "widgets": []
+    }
+  ]
+}

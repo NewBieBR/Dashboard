@@ -1,0 +1,139 @@
+{
+	"client": {
+		"host": ""
+	},
+	"server": {
+		"current_time": 1531680780,
+		"services": [
+			{
+				"name": "weather",
+				"widgets": [
+					{
+						"name": "city_weather",
+						"description":
+							"Affichage de la temperature pour une ville",
+						"params": [
+							{
+								"name": "city",
+								"type": "string"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "news",
+				"widgets": [
+					{
+						"name": "newspaper",
+						"description":
+							"Affichage de la liste des derniers articles d'un journal",
+						"params": [
+							{
+								"name": "newspaper",
+								"type": "string"
+							}
+						]
+					},
+					{
+						"name": "country_headlines",
+						"description":
+							"Affichage de la liste des derniers articles d'un pays",
+						"params": [
+							{
+								"name": "country",
+								"type": "string"
+							}
+						]
+					},
+					{
+						"name": "news_by_genre",
+						"description":
+							"Affichage de la liste d'articles triés par genre",
+						"params": [
+							{
+								"name": "genre",
+								"type": "string"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "time",
+				"widgets": [
+					{
+						"name": "city_time",
+						"description":
+							"Affichage de l'heure d'une ville",
+						"params": [
+							{
+								"name": "city",
+								"type": "string"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "entertainment",
+				"widgets": [
+					{
+						"name": "bored",
+						"description":
+							"Affichage d'une activité à faire",
+						"params": [
+							{
+								"name": "type",
+								"type": "string"
+							}
+						]
+					},
+					{
+						"name": "artist_events",
+						"description":
+							"Affichage des concerts à venir d'un artiste",
+						"params": [
+							{
+								"name": "artist_name",
+								"type": "string"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "finance",
+				"widgets": [
+					{
+						"name": "crypto_price",
+						"description":
+							"Affichage du prix en euro d'une crypromonnaie",
+						"params": [
+							{
+								"name": "crypto_currency",
+								"type": "string"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "games",
+				"widgets": [
+					{
+						"name": "steam_game_rank",
+						"description":
+							"Affichage du top 10 des jeux par catégorie",
+						"params": [
+							{
+								"name": "category",
+								"type": "string"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="../lib/jquery.min.js"></script>
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="node_modules/fitty/dist/fitty.min.js"></script>
+	<script type="text/javascript" src="../src/timer.js"></script>
+	<script type="text/javascript" src="../src/widgets.js"></script>
+	<script type="text/javascript" src="../src/widgets/Newspaper.js"></script>
+	<script type="text/javascript" src="../src/widgets/CryptoPrice.js"></script>
+	<script type="text/javascript" src="../src/widgets/SteamRank.js"></script>
+	<script type="text/javascript" src="../src/widgets/CityTime.js"></script>
+	<script type="text/javascript" src="../src/widgets/CityWeather.js"></script>
+	<script type="text/javascript" src="../src/widgets/ArtistEvents.js"></script>
+	<script type="text/javascript" src="../src/widgets/Bored.js"></script>
+	<script type="text/javascript" src="../src/widgets/NewsByGenre.js"></script>
+	<script type="text/javascript" src="../src/widgets/CountryHeadlines.js"></script>
+	<script type="text/javascript" src="../src/services.js"></script>
+	<script type="text/javascript" src="../src/language.js"></script>
+	<script type="text/javascript" src="../src/dashboard.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/dbstyle.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<title>Dashboard</title>
+</head>
+<body>
+	<header>
+		<i class="material-icons abs_center_ver" id="servicesBtn">widgets</i>
+		<div class="abs_center" id="title">Dashh</div>
+		<div class="abs_center_ver" id="hello"><span style="margin-right: 5px" labelId="hello"></span> <span id="username">Hung Dao</span></div>
+		<i id="changeLangBtn" class="material-icons abs_center_ver">language</i>
+		<div id="langOptBox">
+		</div>
+		<i id="logoutBtn" class="material-icons abs_center_ver">power_settings_new</i>
+	</header>
+	<div id="servicesBox" class="popBox abs_center">
+		<div class="closeBtn">×</div>
+		<div id="servicesBoxTitle"><span labelId="services"></span></div>
+		<div id="servicesCont"></div>
+	</div>
+	<div id="board">
+		<div id="grid" class="grid">
+		</div>
+	</div>
+	<div id="addWidgetBtn"><span class="abs_center">+</span></div>
+	<div id="widgetParamsBox" class="popBox abs_center">
+		<div id="widgetParamsBoxTitle"><span labelId="widgetSettings"></span></div>
+		<div class="closeBtn">×</div>
+		<div id="widgetsSelect" class="select">
+			<select name="slct" id="slct">
+				<option labelId="selectAWidget"></option>
+			</select>
+		</div>
+		<div id="widgetParamsCont">
+			<div style="padding: 10px"><span labelId="widget_size"></span></div>
+			<div id="widgetSizeSelectBox">
+				<div><div id="optSize1" class="widgetSizeSelectOpt abs_center selected"><span class="abs_center">2 x 2</span></div></div>
+				<div><div id="optSize2" class="widgetSizeSelectOpt abs_center"><span class="abs_center">4 x 2</span></div></div>
+				<div><div id="optSize3" class="widgetSizeSelectOpt abs_center"><span class="abs_center">3 x 4</span></div></div>
+				<div><div id="optSize4" class="widgetSizeSelectOpt abs_center"><span class="abs_center">4 x 4</span></div></div>
+			</div>
+			<div style="padding: 10px"><span labelId="widget_frequency"></span></div>
+			<div style="padding: 10px"><input class="widget_frequency" type="number"></div>
+		</div>
+		<div id="widgetParamsFooter">
+			<div id="addWidgetConfirmBtn" class="abs_center_ver desactivated"><span class="abs_center" labelId="confirm"></span></div>
+			<div id="widgetDeleteBtn" class="abs_center_ver"><span class="abs_center" labelId="delete"></span></div>
+		</div>
+	</div>
+</body>
+</html>

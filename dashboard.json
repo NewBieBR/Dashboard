@@ -1,0 +1,319 @@
+{
+	"services": [
+		{
+			"id": "news",
+			"widgets": [
+				{
+					"id": "newspaper",
+					"descriptionId": "newspaper_description",
+					"defaultFrequence": 3600,
+					"params": [
+						{
+							"nameId": "newspaper",
+							"type": "string",
+							"defaultValue": "le-monde",
+							"element": {
+								"type": "select",
+								"options": [{
+									"value": "le-monde",
+									"label": "Le Monde"
+								},
+								{
+									"value": "liberation",
+									"label": "Libération"									
+								},
+								{
+									"value": "time",
+									"label": "Time"									
+								},
+								{
+									"value": "ign",
+									"label": "IGN"									
+								},
+								{
+									"value": "les-echos",
+									"label": "Les Echos"									
+								},
+								{
+									"value": "bbc-news",
+									"label": "BBC News"									
+								}]
+							}
+
+						}
+					]
+				},
+				{
+					"id": "country_headlines",
+					"defaultFrequence": 3600,
+					"descriptionId": "country_headlines_description",
+					"params": [
+						{
+							"nameId": "country",
+							"type": "string",
+							"defaultValue": "fr",
+							"element": {
+								"type": "select",
+								"options": [{
+									"value": "fr",
+									"label": "France"
+								},
+								{
+									"value": "jp",
+									"label": "Japan"									
+								},
+								{
+									"value": "cn",
+									"label": "China"									
+								},
+								{
+									"value": "sa",
+									"label": "Saudi Arabia"									
+								},
+								{
+									"value": "us",
+									"label": "United States"									
+								}]
+							}
+	
+						}
+					]
+				},
+				{
+					"id": "news_by_genre",
+					"defaultFrequence": 3600,
+					"descriptionId": "news_by_genre_description",
+					"params": [
+						{
+							"nameId": "genre",
+							"type": "string",
+							"defaultValue": "technology",
+							"element": {
+								"type": "select",
+								"options": [{
+									"value": "technology",
+									"label": "Technology"
+								},
+								{
+									"value": "business",
+									"label": "Business"									
+								},
+								{
+									"value": "health",
+									"label": "Health"									
+								},
+								{
+									"value": "science",
+									"label": "Science"									
+								},
+								{
+									"value": "sports",
+									"label": "Sports"									
+								}]
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "time",
+			"widgets": [
+				{
+					"id": "city_time",
+					"defaultFrequence": 60,
+					"descriptionId": "city_time_description",
+					"params": [
+						{
+							"nameId": "city",
+							"type": "string",
+							"defaultValue": "Paris",
+							"element": {
+								"type": "input"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "entertainment",
+			"widgets": [
+				{
+					"id": "bored",
+					"defaultFrequence": 86400,
+					"descriptionId": "bored_description",
+					"params": [
+						{
+							"nameId": "type",
+							"type": "string",
+							"defaultValue": "recreational",
+							"element": {
+								"type": "select",
+								"options": [{
+									"value": "recreational",
+									"label": "Recreational"
+								},
+								{
+									"value": "education",
+									"label": "Education"									
+								},
+								{
+									"value": "social",
+									"label": "Social"									
+								},
+								{
+									"value": "diy",
+									"label": "Do It Yourself"									
+								},
+								{
+									"value": "charity",
+									"label": "Charity"									
+								},
+								{
+									"value": "cooking",
+									"label": "Cooking"									
+								},
+								{
+									"value": "relaxation",
+									"label": "Relaxationocial"									
+								},
+								{
+									"value": "music",
+									"label": "Music"									
+								},
+								{
+									"value": "busywork",
+									"label": "Busywork"									
+								}]
+							}
+
+						}
+					]
+				},
+				{
+					"id": "artist_events",
+					"descriptionId": "artist_event_description",
+					"defaultFrequence": 84600,
+					"params": [
+						{
+							"nameId": "artist_name",
+							"type": "string",
+							"element": {
+								"type": "input"
+							}
+						}
+					]
+				}
+
+			]
+		},
+		{
+			"id": "weather",
+			"widgets": [
+				{
+					"id": "city_weather",
+					"defaultFrequence": 3600,
+					"descriptionId": "city_weather_description",
+					"params": [
+						{
+							"nameId": "city",
+							"type": "string",
+							"element": {
+								"type": "input"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "finance",
+			"widgets": [
+				{
+					"id": "crypto_price",
+					"defaultFrequence": 3600,
+					"descriptionId": "crypto_price_description",
+					"params": [
+						{
+							"nameId": "cryto_currency",
+							"type": "string",
+							"defaultValue": "Bitcoin",
+							"element": {
+								"type": "select",
+								"options": [{
+									"value": "Bitcoin",
+									"label": "Bitcoin"
+								},
+								{
+									"value": "Ethereum",
+									"label": "Ethereum"									
+								},
+								{
+									"value": "Litecoin",
+									"label": "Litecoin"									
+								}]
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "games",
+			"widgets": [
+				{
+					"id": "steam_game_rank",
+					"defaultFrequence": 84600,
+					"descriptionId": "steam_game_rank_description",
+					"params": [
+						{
+							"nameId": "category",
+							"type": "string",
+							"defaultValue": "Action",
+							"element": {
+								"type": "select",
+								"options": [{
+									"value": "Action",
+									"label": "Action"
+								},
+								{
+									"value": "Adventure",
+									"label": "Adventure"
+								},
+								{
+									"value": "RPG",
+									"label": "RPG"
+								},
+								{
+									"value": "Sport",
+									"label": "Sport"
+								},
+								{
+									"value": "Strategy",
+									"label": "Strategy"
+								},
+								{
+									"value": "Massively Multiplayer",
+									"label": "MMO"
+								},
+								{
+									"value": "Indi",
+									"label": "Indi"
+								},
+								{
+									"value": "Simulation",
+									"label": "Simulation"
+								},
+								{
+									"value": "Racing",
+									"label": "Racing"
+								}]
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
